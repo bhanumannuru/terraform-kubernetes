@@ -22,9 +22,9 @@ instance_config = {
 
     instance_1 = {
 
-      nic_name      = { "Name" = "dev_nic1" }
+      nic_name      = { "Name" = "jenkins" }
      private_ips    = ["172.18.10.100"]
-     instance_name  = { "Name" = "dev-server1" }
+     instance_name  = { "Name" = "dev-jenkins" }
      ami_name       =  "ami-0667149a69bc2c367"
      instance_type = "t2.micro"
      instance_zone = "ap-south-1b"
@@ -33,13 +33,56 @@ instance_config = {
 
     instance_2 = {
 
-      nic_name      = { "Name" = "dev_nic2" }
+      nic_name      = { "Name" = "dev_sonarqube" }
      private_ips    = ["172.18.10.101"]
-     instance_name  = { "Name" = "dev-server2" }
+     instance_name  = { "Name" = "dev-sonarqube" }
      ami_name       =  "ami-0667149a69bc2c367"
      instance_type = "t2.medium"
      instance_zone = "ap-south-1b"
 
     }
+  
+    instance_3 = {
 
+      nic_name      = { "Name" = "dev_ansible" }
+     private_ips    = ["172.18.10.101"]
+     instance_name  = { "Name" = "dev-ansible" }
+     ami_name       =  "ami-0667149a69bc2c367"
+     instance_type = "t2.micro"
+     instance_zone = "ap-south-1b"
+
+    }
+  
+    instance_4 = {
+
+      nic_name      = { "Name" = "dev_docker" }
+     private_ips    = ["172.18.10.101"]
+     instance_name  = { "Name" = "dev-docker" }
+     ami_name       =  "ami-0667149a69bc2c367"
+     instance_type = "t2.micro"
+     instance_zone = "ap-south-1b"
+
+    }
+  
+    instance_5 = {
+
+      nic_name      = { "Name" = "dev_grafana" }
+     private_ips    = ["172.18.10.101"]
+     instance_name  = { "Name" = "dev-grafana" }
+     ami_name       =  "ami-0667149a69bc2c367"
+     instance_type = "t2.micro"
+     instance_zone = "ap-south-1b"
+
+    }
+
+    instance_6 = {
+
+      nic_name      = { "Name" = "dev_kubernetes" }
+     private_ips    = ["172.18.10.101"]
+     instance_name  = { "Name" = "dev-kubernets" }
+     ami_name       =  "ami-0667149a69bc2c367"
+     instance_type = "t2.medium"
+     instance_zone = "ap-south-1b"
+
+    }
 }
