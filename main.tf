@@ -47,3 +47,5 @@ module "instance" {
   nic_id        = module.nic[each.key].nic_id
   
 }
+    
+    hello this ;line 51 for checking
